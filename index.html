@@ -1,0 +1,214 @@
+---
+# Jekyll Front Matter (Обязательно для обработки)
+---
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta
+      name="description"
+      content="Portfolio von Kristina – Fachinformatikerin für Anwendungsentwicklung & UI/UX Designerin."
+    />
+    <meta name="author" content="Kristina Korn" />
+
+    <title>Kristina | IT-Anwendungsentwicklung & Design</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  </head>
+  
+  <body>
+    <header class="site-header">
+      <div class="wrapper header-content">
+        <a class="site-title" href="{{ '/' | relative_url }}"> CodeCatnip </a>
+        
+        <nav class="site-nav">
+          <ul>
+            <li><a href="{{ '/#about' | relative_url }}">Über mich</a></li>
+            <li><a href="{{ '/#skills' | relative_url }}">Kompetenzen</a></li>
+            <li><a href="{{ '/#projects' | relative_url }}">Projekte</a></li>
+            <li><a href="{{ '/#contact' | relative_url }}" class="btn-cta">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="wrapper hero-content fade-in">
+          <span class="greeting">Hallo, ich bin Kristina</span>
+          <h1>Code & Ästhetik <br /><em>in Harmonie.</em></h1>
+          <p class="hero-subtitle">
+            <br />
+            Webdesign mit Gefühl. Mein Weg führt mich aktuell durch die
+            Umschulung zur
+            <strong>Fachinformatikerin für Anwendungsentwicklung (GFN)</strong>, 
+            doch mein eigentlicher Fokus liegt auf der kreativen
+            Schnittstelle zwischen Technik und Design. Ich verbinde fundierte
+            technische Grundlagen mit einem klaren Sinn für Ästhetik. Mein Ziel
+            ist es, Websites zu entwickeln, die nicht nur reibungslos
+            funktionieren, sondern auch eine Wohlfühlatmosphäre mit sich bringen: ruhig, schön und einprägsam.
+            Unsere digitale Welt braucht mehr Ästhetik und weniger Lärm – und
+            ich möchte dazu beitragen.
+          </p>
+          <div class="hero-actions">
+            <a href="{{ '/#projects' | relative_url }}" class="btn btn-primary">Meine Arbeit sehen</a>
+            <a href="{{ '/#about' | relative_url }}" class="btn btn-text">Mehr erfahren ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section-text">
+        <div class="wrapper">
+          <div class="glass-card">
+            <h2>Meine Vision</h2>
+            <p>
+              Derzeit vertiefe ich meine Kenntnisse in der Umschulung zur
+              Fachinformatikerin. Mein Herz schlägt für die Schnittstelle
+              zwischen Mensch und Maschine:
+              <strong>modernes UI/UX-Design</strong> und intuitive
+              Nutzerführung.
+            </p>
+            <p>
+              Wie ein Spaziergang durch einen ruhigen Wald soll gute Software
+              sein: klar, erfrischend und ohne Hindernisse. Ich kombiniere
+              analytisches Denken mit ästhetischem Anspruch, um digitale
+              Erlebnisse zu schaffen, die Emotionen wecken.
+            </p>
+            <p class="highlight-text">
+              <strong>Aktuell suche ich:</strong> Eine Praktikumstelle, in der
+              ich meine technischen Kenntnisse praxisnah anwenden und meine
+              Design-Visionen umsetzen kann, mit dem klaren Wunsch einer
+              anschließenden, langfristigen Zusammenarbeit.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-grid">
+        <div class="wrapper">
+          <h2 class="section-title">Technologie & Werkzeuge</h2>
+          <div class="grid-container">
+            <div class="skill-card">
+              <h3>Development</h3>
+              <ul>
+                <li>HTML5 & CSS3 (Sass/SCSS)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Python Basics</li>
+                <li>Java Basics</li>
+                <li>SQL & Datenbanken</li>
+                <li>Git & GitHub Workflows</li>
+                <li>Scrum & Agile Flows</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Design & UI/UX</h3>
+              <ul>
+                <li>Figma & Prototyping</li>
+                <li>Canva</li>
+                <li>Adobe Photoshop</li>
+                <li>Wireframing</li>
+                <li>Nutzerzentriertes Design</li>
+                <li>Barrierefreiheit</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Soft Skills & Tools</h3>
+              <ul>
+                <li>SAP EWM Erfahrung</li>
+                <li>MS Office</li>
+                <li>Analytisches Denken</li>
+                <li>Kreative Problemlösung</li>
+                <li>Zuverlässigkeit, Disziplin und selbstständiges Arbeiten</li>
+                <li>Kommunikationsstärke und Teamfähigkeit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-projects">
+        <div class="wrapper">
+          <h2 class="section-title">Ausgewählte Projekte</h2>
+          
+          <div class="projects-grid">
+            {% for project in site.projects %}
+            <a href="{{ project.url | relative_url }}" class="project-card">
+              <div class="card-image">
+                <img src="{{ project.thumbnail | relative_url }}" alt="{{ project.title }}" loading="lazy">
+                <div class="card-overlay">
+                  <div class="overlay-content">
+                    <h3>{{ project.title }}</h3>
+                    <span class="view-btn">Projekt anschauen &rarr;</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-contact">
+        <div class="wrapper">
+          <div class="glass-card compact">
+            <h2>Lassen Sie uns sprechen</h2>
+            <p>
+              Ich bringe Ruhe in komplexe Projekte und Ästhetik in den Code.<br />
+              Ich freue mich auf Ihre Nachricht.
+            </p>
+
+            <div class="contact-grid">
+              <a href="mailto:kristina.korn08@gmail.com" class="contact-item">
+                <div class="icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <span class="contact-label">E-Mail</span>
+              </a>
+
+              <a href="https://github.com/CodeCatnips" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <span class="contact-label">GitHub</span>
+              </a>
+
+              <a href="https://www.linkedin.com/in/kristina-korn-70b877373/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <span class="contact-label">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2025-2026 CodeCatnip. Mit Liebe und Code gemacht.</p>
+        <div class="legal-links">
+          <a href="{{ '/impressum.html' | relative_url }}">Impressum</a>
+          <a href="{{ '/datenschutz.html' | relative_url }}">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/gsap.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/ScrollTrigger.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+
+  </body>
+</html>

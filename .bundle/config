@@ -1,0 +1,2 @@
+---
+BUNDLE_BUILD__RMAGICK: "--with-opt-dir=C:/ImageMagick"

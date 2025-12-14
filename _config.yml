@@ -1,0 +1,51 @@
+title: "Kristina — IT-Anwendungsentwicklung & Designerin"
+description: "Fachinformatikerin AE | Webdesign | UI/UX | Creative digitale Lösungen"
+baseurl: ""
+url: "https://codecatnips.github.io"
+
+
+
+plugins:
+  - jekyll-responsive-image
+  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+
+# Markdown Einstellung
+markdown: kramdown
+highlighter: rouge
+
+# Collection Projects
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Sass/SCSS/CSS
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Optionen
+show_excerpts: true
+
+# Bio
+author:
+  name: "Kristina (CodeCatnips)"
+  role: "Fachinformatikerin, Anwendungsentwicklung (Studentin)"
+  location: "Germany"
+  bio: "I craft cozy, colorful interfaces and clean code. Passionate about UI/UX & Web-design."
+
+# social links
+social:
+  - title: "GitHub"
+    url: "https://codecatnips.github.io"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/kristina-korn-70b877373"
+  - title: "Dribbble"
+    url: "https://dribbble.com/CodeCatnip"

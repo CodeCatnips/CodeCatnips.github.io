@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} | Kristina Korn</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  </head>
+  <body>
+    
+    <header class="site-header">
+      <div class="wrapper header-content">
+        <a class="site-title" href="/">CodeCatnip</a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <!-- <a href="{{ site.baseurl }}/#about/">Über mich</a>
+            <a href="{{ site.baseurl }}/#skills.html">Kompetenzen</a>
+            <a href="{{ site.baseurl }}/#projects.html">Projekte</a> -->
+            <a href="{{ site.baseurl }}/#contact.html">Kontakt</a> 
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content }} </main>
+
+    <footer>
+      <div class="wrapper">
+        <p>&copy; 2025-2026 CodeCatnip</p>
+        <div class="legal-links">
+          <a href="/impressum.html">Impressum</a>
+          <a href="/datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/js/gsap.min.js' | relative_url }}"></script>
+    
+    <script src="{{ '/assets/js/ScrollTrigger.min.js' | relative_url }}"></script>
+    
+    <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+
+
+  </body>
+</html>

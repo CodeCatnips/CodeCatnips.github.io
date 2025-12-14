@@ -1,0 +1,99 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | Kristina Korn</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+  </head>
+<body>
+  
+  <header class="site-header">
+    <div class="wrapper header-content">
+       <a class="site-title" href="/"> CodeCatnip </a>
+       <a href="/#projects" class="btn-cta">← Zurück</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero" style="background-image: url('{{ page.hero_image }}');">
+       <div class="project-hero-overlay"></div>
+       <div class="wrapper project-hero-content fade-in">
+          <h1>{{ page.title }}</h1>
+          <div class="tech-stack">
+            {% for tech in page.technologies %}
+              <span class="tech-tag">{{ tech }}</span>
+            {% endfor %}
+          </div>
+       </div>
+    </section>
+
+    <section class="project-body">
+      <div class="wrapper">
+        <div class="glass-card">
+           <div class="project-description">
+             {{ content }} </div>
+
+           <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Gallerie</h3>
+           <div class="gallery-grid">
+             {% for img in page.gallery_images %}
+               <div class="gallery-item">
+                 <img src="{{ img }}" alt="Project Screenshot" class="lightbox-trigger">
+               </div>
+             {% endfor %}
+           </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<div id="lightbox" class="lightbox">
+  <span class="close-btn">&times;</span>
+  
+  <div class="lightbox-arrow prev-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </div>
+
+  <img class="lightbox-content" id="lightbox-img" alt="Full screen project">
+
+  <div class="lightbox-arrow next-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </div>
+</div>
+
+  <footer>
+     <div class="wrapper"><p>&copy; 2025-2026 Kristina | CodeCatnip </p></div>
+  </footer>
+
+    <script src="{{ '/assets/js/gsap.min.js' | relative_url }}"></script>
+    
+    <script src="{{ '/assets/js/ScrollTrigger.min.js' | relative_url }}"></script>
+    
+    <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
+
+</body>
+</html>
