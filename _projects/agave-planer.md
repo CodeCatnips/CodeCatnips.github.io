@@ -4,7 +4,8 @@ title: "Agave Planer — Ressourcenvisualisierung "
 description: "Eine professionelle Desktop-Anwendung zur Schichtplanung und Mitarbeiterverwaltung."
 technologies: ["Python", "Tkinter", "JSON", "InnoSetup"]
 thumbnail: "/assets/img/projects/agave_planer/thumb.jpg" # Start Seite (klein)
-hero_image: "/assets/img/projects/agave_planer/agave-hero.png" # Bild fur Head
+hero_image: "/assets/img/projects/agave_planer/agave-hero.png
+" # Bild fur Head
 gallery_images:
   - /assets/img/projects/agave_planer/Screenshot_1.jpg
   - /assets/img/projects/agave_planer/Screenshot_2.jpg

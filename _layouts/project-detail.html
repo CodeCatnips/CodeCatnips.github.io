@@ -30,38 +30,38 @@
   
   <header class="site-header">
     <div class="wrapper header-content">
-       <a class="site-title" href="/"> CodeCatnip </a>
-       <a href="/#projects" class="btn-cta">← Zurück</a>
+      <a class="site-title" href="/"> CodeCatnip </a>
+      <a href="/#projects" class="btn-cta">← Zurück</a>
     </div>
   </header>
 
   <main>
     <section class="project-hero" style="background-image: url('{{ page.hero_image }}');">
-       <div class="project-hero-overlay"></div>
-       <div class="wrapper project-hero-content fade-in">
+      <div class="project-hero-overlay"></div>
+      <div class="wrapper project-hero-content fade-in">
           <h1>{{ page.title }}</h1>
           <div class="tech-stack">
             {% for tech in page.technologies %}
               <span class="tech-tag">{{ tech }}</span>
             {% endfor %}
           </div>
-       </div>
+      </div>
     </section>
 
     <section class="project-body">
       <div class="wrapper">
         <div class="glass-card">
-           <div class="project-description">
-             {{ content }} </div>
+          <div class="project-description">
+            {{ content }} </div>
 
-           <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Gallerie</h3>
-           <div class="gallery-grid">
-             {% for img in page.gallery_images %}
-               <div class="gallery-item">
-                 <img src="{{ img }}" alt="Project Screenshot" class="lightbox-trigger">
-               </div>
-             {% endfor %}
-           </div>
+          <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Gallerie</h3>
+          <div class="gallery-grid">
+            {% for img in page.gallery_images %}
+              <div class="gallery-item">
+                <img src="{{ img }}" alt="Project Screenshot" class="lightbox-trigger">
+              </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </section>
@@ -86,7 +86,7 @@
 </div>
 
   <footer>
-     <div class="wrapper"><p>&copy; 2025-2026 Kristina | CodeCatnip </p></div>
+    <div class="wrapper"><p>&copy; 2025-2026 Kristina | CodeCatnip </p></div>
   </footer>
 
     <script src="{{ '/assets/js/gsap.min.js' | relative_url }}"></script>
