@@ -5,74 +5,76 @@
 /* inter-300 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/inter-v20-latin-300.woff2') format('woff2');
+  src: url("../fonts/inter-v20-latin-300.woff2") format("woff2");
 }
 /* inter-regular - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
+  src: url("../fonts/inter-v20-latin-regular.woff2") format("woff2");
 }
 /* inter-500 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/inter-v20-latin-500.woff2') format('woff2');
+  src: url("../fonts/inter-v20-latin-500.woff2") format("woff2");
 }
 /* cormorant-garamond-regular - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/cormorant-garamond-v21-latin-regular.woff2') format('woff2');
+  src: url("../fonts/cormorant-garamond-v21-latin-regular.woff2")
+    format("woff2");
 }
 /* cormorant-garamond-italic - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/cormorant-garamond-v21-latin-italic.woff2') format('woff2');
+  src: url("../fonts/cormorant-garamond-v21-latin-italic.woff2") format("woff2");
 }
 /* cormorant-garamond-600 - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/cormorant-garamond-v21-latin-600.woff2') format('woff2');
+  src: url("../fonts/cormorant-garamond-v21-latin-600.woff2") format("woff2");
 }
 /* cormorant-garamond-600italic - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Cormorant Garamond';
+  font-family: "Cormorant Garamond";
   font-style: italic;
   font-weight: 600;
-  src: url('../fonts/cormorant-garamond-v21-latin-600italic.woff2') format('woff2');
+  src: url("../fonts/cormorant-garamond-v21-latin-600italic.woff2")
+    format("woff2");
 }
 /* lavishly-yours-regular - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Lavishly Yours';
+  font-family: "Lavishly Yours";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lavishly-yours-v7-latin-regular.woff2') format('woff2');
+  src: url("../fonts/lavishly-yours-v7-latin-regular.woff2") format("woff2");
 }
 /* eagle-lake-regular - latin */
 @font-face {
   font-display: swap;
-  font-family: 'Eagle Lake';
+  font-family: "Eagle Lake";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/eagle-lake-v26-latin-regular.woff2') format('woff2');
+  src: url("../fonts/eagle-lake-v26-latin-regular.woff2") format("woff2");
 }
 
 :root {
@@ -201,12 +203,12 @@ ul {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(26, 38, 34, 0.85),
-      rgba(26, 38, 34, 0.7)
-    ),
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    linear-gradient(to bottom, rgba(26, 38, 34, 0.85), rgba(26, 38, 34, 0.7)),
     url("../img/wald1.jpg");
   background-size: cover;
   background-position: center center;
@@ -296,6 +298,22 @@ section {
   border-left: 3px solid var(--accent);
   padding-left: 1rem;
   color: var(--text-main);
+}
+
+.highlight-box {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 3px solid #cfc98af9;
+  color: var(--text-muted);
+  font-style: italic; /* Cursiv */
+  border-radius: 0 5px 5px 0;
+}
+
+.highlight-box strong {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h2 {
@@ -417,10 +435,12 @@ h3 {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
   background-color: var(--bg-soft);
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card-image img {
@@ -433,7 +453,7 @@ h3 {
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
   border-color: var(--accent);
 }
 
@@ -443,7 +463,10 @@ h3 {
 
 .card-overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: rgba(26, 38, 34, 0.85);
   display: flex;
   align-items: center;
@@ -552,8 +575,8 @@ footer {
 
 /* --- Projekt Seite Details --- */
 .project-hero {
-  font-family: var(--font-serif); 
-  font-size: 20px; 
+  font-family: var(--font-serif);
+  font-size: 20px;
   text-shadow: 1px 1px 3px rgb(46, 46, 46);
   height: 60vh;
   position: relative;
@@ -602,8 +625,10 @@ footer {
   object-fit: cover;
   border-radius: 8px;
   cursor: zoom-in;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  border: 1px solid rgba(255,255,255,0.1);
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .gallery-item img:hover {
@@ -614,15 +639,17 @@ footer {
 
 /* --- LIGHTBOX (Modal Fenster) --- */
 .lightbox {
-  display: none; 
-  position: fixed; 
-  z-index: 9999; 
-  left: 0; top: 0; 
-  width: 100%; height: 100%; 
-  background-color: rgba(26, 38, 34, 0.98); 
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 38, 34, 0.98);
   opacity: 0;
   backdrop-filter: blur(10px);
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
 }
 
 .lightbox.active {
@@ -638,7 +665,8 @@ footer {
   border: 2px solid var(--accent);
   box-shadow: 0 0 50px rgba(212, 198, 166, 0.1);
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
   transition: transform 0.3s ease;
 }
@@ -657,7 +685,7 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05); 
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
@@ -668,8 +696,12 @@ footer {
 }
 
 /* position */
-.prev-btn { left: 20px; }
-.next-btn { right: 20px; }
+.prev-btn {
+  left: 20px;
+}
+.next-btn {
+  right: 20px;
+}
 
 /* SVG icon */
 .lightbox-arrow svg {
@@ -698,9 +730,13 @@ footer {
     background: transparent; /* ohne background */
     border: none;
   }
-  .prev-btn { left: 10px; }
-  .next-btn { right: 10px; }
-  
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
+
   .lightbox-arrow svg {
     stroke: var(--accent); /* gold */
   }
@@ -767,7 +803,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-.legal-content p, 
+.legal-content p,
 .legal-content li {
   font-family: var(--font-sans);
   font-size: 1rem;
@@ -815,7 +851,7 @@ footer {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .site-nav {
-    display: none; 
+    display: none;
   }
 
   .hero h1 {
