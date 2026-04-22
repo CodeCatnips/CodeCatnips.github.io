@@ -192,11 +192,12 @@ ul {
 
 /* Hero Section (Wald Atmosphäre) */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 120px 0 60px 0; /* Platz für fixierten Header schaffen */
 }
 
 /* Hintergrundbild oder CSS Gradient */
@@ -220,7 +221,8 @@ ul {
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 800px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .greeting {
@@ -250,8 +252,28 @@ ul {
 .hero-subtitle {
   font-size: 1.1rem;
   color: var(--text-muted);
-  max-width: 500px;
-  margin-bottom: 2.5rem;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.highlight-box {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  border-left: 3px solid #cfc98af9;
+  background: rgba(212, 198, 166, 0.08); /* Мягкий золотистый фон! */
+  color: var(--text-main);
+  font-style: italic;
+  border-radius: 0 5px 5px 0;
+  max-width: 100%;
+}
+
+.highlight-box strong {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-style: normal; /* Убираем курсив с самого заголовка, так солиднее */
 }
 
 .btn {
@@ -298,26 +320,6 @@ section {
   border-left: 3px solid var(--accent);
   padding-left: 1rem;
   color: var(--text-main);
-}
-
-.highlight-box {
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding: 15px 20px;
-  border-left: 3px solid #cfc98af9;
-  background: rgba(212, 198, 166, 0.08);
-  color: var(--text-main);
-  font-style: italic;
-  border-radius: 0 5px 5px 0;
-  max-width: 500px;
-}
-
-.highlight-box strong {
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-style: normal;
 }
 
 h2 {
