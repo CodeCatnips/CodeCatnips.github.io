@@ -14,7 +14,7 @@ gallery_images:
 
 ### Über das Projekt
 
-Dieses Projekt ist eine **interaktive Trainingskarten-Applikation**, die darauf ausgelegt ist, komplexe Lerninhalte strukturiert, effizient und visuell ansprechend darzustellen.  
+Dieses Projekt ist eine **interaktive Trainingskarten-Applikation**, die darauf ausgelegt ist, komplexe Lerninhalte strukturiert, effizient und visuell ansprechend darzustellen.
 Das Interface verbindet klare Benutzerführung, moderne UI-Elemente und solide Sicherheitsmechanismen, um ein zuverlässiges und intuitives Lernerlebnis zu ermöglichen.
 
 
@@ -36,19 +36,19 @@ Ziel war es, ein leicht bedienbares Lernkarten-Tool zu entwickeln, das:
 
 ### **Frontend-Architektur**
 
-- Strukturierter HTML-Aufbau mit klar getrennten Bereichen *(Sidebar, Main, Karte, Footer)*  
-- Responsives Layout, optimiert für Desktop und später erweiterbar für mobile Geräte  
-- Moderne visuelle Gestaltung (Glas-Effekt, ruhige Typografie)  
-- Logische Nutzerführung durch sauber angeordnete Steuerungselemente  
+- Strukturierter HTML-Aufbau mit klar getrennten Bereichen *(Sidebar, Main, Karte, Footer)*
+- Responsives Layout, optimiert für Desktop und später erweiterbar für mobile Geräte
+- Moderne visuelle Gestaltung (Glas-Effekt, ruhige Typografie)
+- Logische Nutzerführung durch sauber angeordnete Steuerungselemente
 
 ### **Interaktive Funktionen**
 
-- Dynamisches Laden von Themen über die Sidebar  
-- Mehrfachauswahl per **CTRL + Klick**  
-- Flüssige Kartenlogik mit:  
-  - `flipCard()` – animiertes Drehen  
-  - `nextCard()` / `previousCard()` – Navigation  
-- Getrennte DOM-Elemente für Frage & Antwort für bessere Wartbarkeit  
+- Dynamisches Laden von Themen über die Sidebar
+- Mehrfachauswahl per **CTRL + Klick**
+- Flüssige Kartenlogik mit:
+  - `flipCard()` – animiertes Drehen
+  - `nextCard()` / `previousCard()` – Navigation
+- Getrennte DOM-Elemente für Frage & Antwort für bessere Wartbarkeit
 
 ### **Sicherheitsaspekte**
 
@@ -62,18 +62,18 @@ Dieses Sicherheitsniveau liegt **deutlich über typischen Ausbildungs- oder Stud
 
 ### **JavaScript-Struktur**
 
-- Logik ausgelagert in **script-public.js**  
-- strikte Trennung von Darstellung und Funktionalität  
-- klare Funktionsnamen und übersichtliche Struktur  
+- Logik ausgelagert in **script-public.js**
+- strikte Trennung von Darstellung und Funktionalität
+- klare Funktionsnamen und übersichtliche Struktur
 
 
 
 ## 3. Was mir besonders gelungen ist
 
-- Eine intuitive, minimalistische UI, die sofort verständlich ist  
-- Robuste und flüssige Kartenlogik  
-- Ein professionelles Sicherheitskonzept, das moderne Standards nutzt  
-- Eine klare, skalierbare Code-Struktur  
-- Ein ästhetisches, ruhiges Lernumfeld, das Nutzer:innen nicht überfordert  
+- Eine intuitive, minimalistische UI, die sofort verständlich ist
+- Robuste und flüssige Kartenlogik
+- Ein professionelles Sicherheitskonzept, das moderne Standards nutzt
+- Eine klare, skalierbare Code-Struktur
+- Ein ästhetisches, ruhiges Lernumfeld, das Nutzer:innen nicht überfordert
 
 Das Projekt zeigt, wie **Design, UX, saubere Frontend-Architektur und Sicherheit** erfolgreich miteinander verbunden werden können — eine starke Grundlage für professionelle Webentwicklung.

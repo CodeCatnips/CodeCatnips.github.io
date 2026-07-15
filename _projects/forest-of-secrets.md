@@ -1,17 +1,17 @@
 ---
 layout: project-detail
-title: "Spiel "Forest of Secrets — Das Katzen-Abenteuer"
-description: "Ein interaktives 2D-Abenteuerspiel in Java, das die klassische OOP-Struktur mit spielerischer Kreativität verbindet."
-technologies: ["Java", "Maven", "JavaFX", "OOP"]
-thumbnail: "/assets/img/projects/forest-of-secrets/thumb.jpg" # Start Seite (klein)
-hero_image: "/assets/img/projects/forest-of-secrets/fos-hero.png
-" # Bild fur Head
+title: Forest of Secrets — Das Katzen-Abenteuer
+description: Ein interaktives 2D-Abenteuerspiel in Java, das die klassische OOP-Struktur mit spielerischer Kreativität verbindet.
+technologies: [Java, Maven, JavaFX, OOP]
+thumbnail: /assets/img/projects/forest_of_secrets/thumb.png
+hero_image: /assets/img/projects/forest_of_secrets/fos-hero.png
 gallery_images:
-  - /assets/img/projects/forest-of-secrets/Screenshot_1.jpg
-  - /assets/img/projects/forest-of-secrets/Screenshot_2.jpg
-  - /assets/img/projects/forest-of-secrets/Screenshot_3.jpg
-  - /assets/img/projects/forest-of-secrets/Screenshot_4.jpg
-  - /assets/img/projects/forest-of-secrets/Screenshot_5.jpg
+  - /assets/img/projects/forest_of_secrets/Screenshot_1.jpg
+  - /assets/img/projects/forest_of_secrets/Screenshot_2.jpg
+  - /assets/img/projects/forest_of_secrets/Screenshot_3.jpg
+  - /assets/img/projects/forest_of_secrets/Screenshot_4.jpg
+  - /assets/img/projects/forest_of_secrets/Screenshot_5.jpg
+  - /assets/img/projects/forest_of_secrets/Screenshot_6.jpg
 ---
 
 ## Über das Projekt
@@ -37,7 +37,7 @@ Der Fokus des Projekts lag auf der praktischen Anwendung von **objektorientierte
 * **Sicherer Spawn:** Weder Hindernisse noch Gefahren können direkt auf dem Startfeld der Katze (0,0) oder den direkt angrenzenden Feldern erscheinen.
 
 ### Architektur & Clean Code
-* **Strikte Trennung nach MVC:** Trennung der Datenlogik (Katze, Hindernisse, Positionen) von der visuellen Darstellung (BoardUI/JavaFX).
+* **Strikte Trennung nach MVC:** Trennung der Datenlogik (Katze, Hindernisse, Positionen) von की визуальной представления (BoardUI/JavaFX).
 * **Robuste Fehlerbehandlung:** Integration von Custom Exceptions (`UnknownElementException`), um fehlerhafte Render-Vorgänge sicher abzufangen.
 * **Modernes Build-Management:** Vollständige Verwaltung und Strukturierung der Abhängigkeiten über Maven.
 
@@ -52,7 +52,7 @@ Der Fokus des Projekts lag auf der praktischen Anwendung von **objektorientierte
 ---
 
 ## Wie es funktioniert (Code-Einblick)
-Im Herzen des Spiels steuert die Klasse `FoS` die gesamte Logik. Hier ist ein Auszug aus der Bewegungsauswertung und Kollisionsprüfung:
+Im Herzen des Spiels steuert die Klasse `FoS` die gesamte Logik. Hier ist ein Auszug aus की движения и проверки столкновений:
 
 ```java
 // Überprüfung auf Kollision mit den generierten Stein-Labyrinthen
