@@ -37,7 +37,7 @@ Der Fokus des Projekts lag auf der praktischen Anwendung von **objektorientierte
 * **Sicherer Spawn:** Weder Hindernisse noch Gefahren können direkt auf dem Startfeld der Katze (0,0) oder den direkt angrenzenden Feldern erscheinen.
 
 ### Architektur & Clean Code
-* **Strikte Trennung nach MVC:** Trennung der Datenlogik (Katze, Hindernisse, Positionen) von की визуальной представления (BoardUI/JavaFX).
+* **Strikte Trennung nach MVC:** Trennung der Datenlogik (Katze, Hindernisse, Positionen) von visuelle Darstellung (BoardUI/JavaFX).
 * **Robuste Fehlerbehandlung:** Integration von Custom Exceptions (`UnknownElementException`), um fehlerhafte Render-Vorgänge sicher abzufangen.
 * **Modernes Build-Management:** Vollständige Verwaltung und Strukturierung der Abhängigkeiten über Maven.
 
@@ -52,7 +52,7 @@ Der Fokus des Projekts lag auf der praktischen Anwendung von **objektorientierte
 ---
 
 ## Wie es funktioniert (Code-Einblick)
-Im Herzen des Spiels steuert die Klasse `FoS` die gesamte Logik. Hier ist ein Auszug aus की движения и проверки столкновений:
+Im Herzen des Spiels steuert die Klasse `FoS` die gesamte Logik. Hier ist ein Auszug aus Bewegungs- und Kollisionsprüfungen:
 
 ```java
 // Überprüfung auf Kollision mit den generierten Stein-Labyrinthen
